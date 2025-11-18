@@ -1,0 +1,30 @@
+services:
+
+  web:
+    build: .
+    container_name: dvwa-web
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+    volumes:
+      - ./config.inc.php:/var/www/html/DVWA/config/config.inc.php:ro
+    restart: always
+
+
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: dvwa@123
+      MYSQL_DATABASE: dvwa
+      MYSQL_USER: dvwa
+      MYSQL_PASSWORD: p@ssw0rd
+      MYSQL_ROOT_HOST: "%"
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
