@@ -1,5 +1,9 @@
 #!/bin/bash
 
+sudo apt update -y
+sudo apt install docker.io docker-compose -y
+
+
 # Ensure reCAPTCHA keys are passed as arguments
 if [ $# -ne 2 ]; then
   echo "Usage: $0 <recaptcha_site_key> <recaptcha_secret_key>"
@@ -26,6 +30,6 @@ sed -i "s/\$_DVWA\['recaptcha_private_key'\] = getenv('RECAPTCHA_PRIVATE_KEY') ?
 
 # Run docker-compose up with --build flag
 echo "Bringing up the Docker containers..."
-docker-compose up -d --build
+sudo docker-compose up -d --build
 
 echo "Deployment complete."
