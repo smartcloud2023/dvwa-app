@@ -8,7 +8,7 @@ Automated deployment of DVWA with reCAPTCHA integration.
 
 Scripts for easy deployment, setup, and cleanup.
 
-Table of Contents
+## Table of Contents
 
 Prerequisites
 
@@ -43,9 +43,10 @@ Running the Deployment
 
 Clone this repository to your local machine:
 
+```
 git clone https://github.com/yourusername/dvwa-docker-deployment.git
 cd dvwa-docker-deployment
-
+```
 
 Start the deployment:
 This will build and run the DVWA application using Docker Compose.
