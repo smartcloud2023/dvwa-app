@@ -58,19 +58,19 @@ This will build and run the DVWA application using Docker Compose.
 Replace <your-recaptcha-site-key> and <your-recaptcha-secret-key> with your actual reCAPTCHA keys.
 
 ### 3. The DVWA will be accessible at:
-
+```
 http://localhost/DVWA
-
+```
 ## Configuring reCAPTCHA
 
 To configure reCAPTCHA for the DVWA application:
 
-Go to the Google reCAPTCHA
+### 1. Go to the Google reCAPTCHA
  site and create a reCAPTCHA key pair (v2 or v3, depending on your choice).
 
-Use the provided site key and secret key when running the deploy.sh script.
+### 2. Use the provided site key and secret key when running the deploy.sh script.
 
-The script automatically adds these keys to the config.inc.php file in the DVWA container.
+### 3. The script automatically adds these keys to the config.inc.php file in the DVWA container.
 
 ## Scripts
  ``` deploy.sh ```
@@ -95,32 +95,33 @@ Removes all Docker images from the local machine.
 Deletes the Docker volume used for the DVWA database.
 
 Usage:
+```
 ./destroy.sh
+```
+## Troubleshooting
 
-Troubleshooting
+### 1. ERR_CONNECTION_RESET:
 
-ERR_CONNECTION_RESET:
+   * Ensure that your Docker containers are up and running (docker ps).
 
-Ensure that your Docker containers are up and running (docker ps).
+   * Try accessing the app with a clean URL: http://localhost/DVWA/.
 
-Try accessing the app with a clean URL: http://localhost/DVWA/.
+   * If using a remote server, ensure that the security group/firewall allows inbound traffic on port 80.
 
-If using a remote server, ensure that the security group/firewall allows inbound traffic on port 80.
+### 2. MySQL Access Denied:
 
-MySQL Access Denied:
+    * Make sure the database credentials in config.inc.php match the ones in your Docker Compose setup.
 
-Make sure the database credentials in config.inc.php match the ones in your Docker Compose setup.
+### 3. SQL Syntax Error:
 
-SQL Syntax Error:
+   * If you encounter an SQL syntax error when creating the database, verify that the SQL commands are compatible with your MySQL version.
 
-If you encounter an SQL syntax error when creating the database, verify that the SQL commands are compatible with your MySQL version.
+## Credits
 
-Credits
+  * DVWA: Damn Vulnerable Web Application
 
-DVWA: Damn Vulnerable Web Application
+  * Docker: Docker Documentation
 
-Docker: Docker Documentation
-
-reCAPTCHA: Google reCAPTCHA
+  * reCAPTCHA: Google reCAPTCHA
 
 Feel free to contribute or open an issue if you encounter any bugs or improvements you think of!
