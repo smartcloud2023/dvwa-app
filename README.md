@@ -2,11 +2,11 @@
 
 This repository provides a simple setup for DVWA (Damn Vulnerable Web Application) using Docker. This deployment includes:
 
-Docker Compose to manage multiple containers (PHP + Apache, MySQL).
+ * Docker Compose to manage multiple containers (PHP + Apache, MySQL).
 
-Automated deployment of DVWA with reCAPTCHA integration.
+ * Automated deployment of DVWA with reCAPTCHA integration.
 
-Scripts for easy deployment, setup, and cleanup.
+ * Scripts for easy deployment, setup, and cleanup.
 
 ## Table of Contents
 
