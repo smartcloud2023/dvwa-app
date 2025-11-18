@@ -1,4 +1,4 @@
-### DVWA Docker Deployment
+# DVWA Docker Deployment
 
 This repository provides a simple setup for DVWA (Damn Vulnerable Web Application) using Docker. This deployment includes:
 
@@ -32,35 +32,36 @@ This repository provides a simple setup for DVWA (Damn Vulnerable Web Applicatio
 
 Before deploying DVWA, make sure you have the following installed:
 
-Docker: Install Docker from here
+ * Docker: Install Docker from here
 .
 
-Docker Compose: Install Docker Compose from here
+ * Docker Compose: Install Docker Compose from here
 .
 
-Setup Instructions
-Running the Deployment
+## Setup Instructions
+### Running the Deployment
 
-Clone this repository to your local machine:
+### 1.  Clone this repository to your local machine:
 
 ```
 git clone https://github.com/yourusername/dvwa-docker-deployment.git
 cd dvwa-docker-deployment
 ```
 
-Start the deployment:
+### 2. Start the deployment:
 This will build and run the DVWA application using Docker Compose.
 
+```
 ./deploy.sh <your-recaptcha-site-key> <your-recaptcha-secret-key>
-
+```
 
 Replace <your-recaptcha-site-key> and <your-recaptcha-secret-key> with your actual reCAPTCHA keys.
 
-The DVWA will be accessible at:
+### 3. The DVWA will be accessible at:
 
 http://localhost/DVWA
 
-Configuring reCAPTCHA
+## Configuring reCAPTCHA
 
 To configure reCAPTCHA for the DVWA application:
 
@@ -71,8 +72,8 @@ Use the provided site key and secret key when running the deploy.sh script.
 
 The script automatically adds these keys to the config.inc.php file in the DVWA container.
 
-Scripts
-deploy.sh
+## Scripts
+ ``` deploy.sh ```
 
 This script automates the process of:
 
