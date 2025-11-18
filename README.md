@@ -10,25 +10,25 @@ This repository provides a simple setup for DVWA (Damn Vulnerable Web Applicatio
 
 ## Table of Contents
 
-Prerequisites
+ 1. Prerequisites
 
-Setup Instructions
+ 2. Setup Instructions
 
-Running the Deployment
+   * Running the Deployment
 
-Configuring reCAPTCHA
+   * Configuring reCAPTCHA
 
-Scripts
+ 3. Scripts
 
-deploy.sh
+   * deploy.sh
 
-destroy.sh
+   * destroy.sh
 
-Troubleshooting
+ 4. Troubleshooting
 
-Credits
+ 5. Credits
 
-Prerequisites
+## Prerequisites
 
 Before deploying DVWA, make sure you have the following installed:
 
