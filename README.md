@@ -44,7 +44,7 @@ Before deploying DVWA, make sure you have the following installed:
 ### 1.  Clone this repository to your local machine:
 
 ```
-git clone https://github.com/yourusername/dvwa-docker-deployment.git
+git clone https://github.com/smartcloud2023/dvwa-app.git
 cd dvwa-docker-deployment
 ```
 
