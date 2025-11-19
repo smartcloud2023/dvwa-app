@@ -52,7 +52,7 @@ cd dvwa-app
 This will build and run the DVWA application using Docker Compose.
 
 ```
-./deploy.sh <your-recaptcha-site-key> <your-recaptcha-secret-key>
+./start.sh <your-recaptcha-site-key> <your-recaptcha-secret-key>
 ```
 
 Replace <your-recaptcha-site-key> and <your-recaptcha-secret-key> with your actual reCAPTCHA keys.
@@ -73,7 +73,7 @@ To configure reCAPTCHA for the DVWA application:
 ### 3. The script automatically adds these keys to the config.inc.php file in the DVWA container.
 
 ## Scripts
- ``` deploy.sh ```
+ ``` start.sh ```
 
 This script automates the process of:
 
@@ -82,7 +82,7 @@ Updating the reCAPTCHA site key and secret key in the config.inc.php file.
 Rebuilding and starting the Docker containers.
 
 Usage:
-./deploy.sh <your-recaptcha-site-key> <your-recaptcha-secret-key>
+./start.sh <your-recaptcha-site-key> <your-recaptcha-secret-key>
 
 destroy.sh
 
