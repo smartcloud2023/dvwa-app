@@ -52,7 +52,7 @@ cd dvwa-app
 This will build and run the DVWA application using Docker Compose.
 
 ```
-./start.sh <your-recaptcha-site-key> <your-recaptcha-secret-key>
+./start.sh 6LcR8xEsAAAAAIhnUY7Y1p22rXK_9mxk3u6_E6iA 6LcR8xEsAAAAABishigb_Eshzt9Ps_8h0OIrTo6d
 ```
 
 Replace <your-recaptcha-site-key> and <your-recaptcha-secret-key> with your actual reCAPTCHA keys.
